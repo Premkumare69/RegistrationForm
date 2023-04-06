@@ -55,14 +55,14 @@ form.addEventListener("submit", (e) => {
 async function postData(data) {
     console.log(data);
     await axios
-        .post("http://localhost:3000/postdata", data)
+        .post("http://13.50.17.124:3000/postdata", data)
         .then((res) => console.log(res.data));
 }
 
 async function getData() {
     const values = document.getElementById("register-value");
     let result = await axios
-        .get("http://localhost:3000/getdata")
+        .get("http://13.50.17.124/getdata")
         .then((res) => res.data);
 
     console.log(result);
