@@ -62,7 +62,7 @@ async function postData(data) {
 async function getData() {
     const values = document.getElementById("register-value");
     let result = await axios
-        .get("http://13.50.17.124/getdata")
+        .get("http://13.50.17.124:3000/getdata")
         .then((res) => res.data);
 
     console.log(result);
